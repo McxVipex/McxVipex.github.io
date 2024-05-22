@@ -1,0 +1,139 @@
+<!DOCTYPE html> <!--la balise de base pour commencer html-->
+<html lang="fr"> <!--séléction de langue-->
+<head> <!--ici tous les link c'est à dire afin de chercher des informations de quelque part hors du site-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!--link à la page css-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--cette ligne de code et les deux qui suivent sont pour les polices-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--les polices sont déjà installé sur cette ordinateur mais pas sur tout les pc-->
+    <link href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> <!--bootstrap-->
+    <script src="script.js"></script> <!--link à java script-->
+    <title>Journal de l'école</title> <!--insértion du titre-->
+</head> <!--fin de la catégorie head-->
+<body> <!--début de tout le code qui fera office de contenu de la page-->
+<section class="header"> <!--création d'une section attribué à la classe header-->
+    <div class="text-box"> <!--création d'une division avec la classe "text-box"-->
+        <h1>Le concert 3000</h1> <!--insértion d'un titre-->
+        <p>Un magazine qui vous tient au courant des meilleurs concerts<br> <!--retour à la ligne-->Et comment y assister dans les meilleurs conditions</p> <!--insértion d'un paragraphe-->
+        <a href="#course" class="hero-btn">Alors, allons-y</a> <!--insértion d'un lien avec la classe "hero-btn" qui mène à la page erreur-->
+    </div> <!--fin de la divison "text-box"-->
+</section> <!--fin de la section header-->
+<!------------a propos du site---------------->
+<section class="course" id="course"> <!--création d'une section attribué à la classe course-->
+    <h1>N'oubliez pas</h1> <!--insértion d'un titre-->
+    <p>De toujours se rappeller de faire atttention à</p> <!--insértion d'un paragraphe-->
+    <div class="row"> <!--création d'une division avec la classe "row"-->
+        <div class="course-col"> <!--création d'une division avec la classe "course-col"-->
+            <h3>La distance</h3> <!--insértion d'un sous sous titre-->
+            <p>Le saviez-vous ? être au premier rang à la sortir des enceintes peut être la meilleure place (du concert) mais sans doute la pire pour vos oreilles. Eh oui ! plus on se rapproche de la source sonore plus le risque augmente. Se reculer d’uniquement une dizaine de mètre de ce rang peut réduire  jusqu’à 24db et de se rapprocher du seuil limite de 90 dB.</p> <!--insértion d'un paragraphe-->
+        </div> <!--fin de la divison "course-col"-->
+        <div class="course-col" id="Pourquoi"> <!--création d'une division avec la classe "course-col" et l'identifiant "Pourquoi"-->
+            <h3>Le volume</h3> <!--insértion d'un sous sous titre-->
+            <p>Plus on est exposé à un son fort plus on risque d’endommager nos oreilles. Le niveau d’intensité d’un son se mesure en décibels (dB) : Une exposition à un bruit en dessous de 80 dB ne comporte pas de risque. Au-dessus de 90dB les sons deviennent nocifs. Or, lors d’un concert le niveau d’intensité sonore peut atteindre 112dB !</p> <!--insértion d'un paragraphe-->
+        </div> <!--fin de la divison "course-col" avec l'identifiant "pourquoi"-->
+        <div class="course-col"> <!--création d'une division avec la classe "course-col"-->
+            <h3>La durée</h3> <!--insértion d'un sous sous titre-->
+            <p>Le risque lié au bruit dépend aussi de la durée d’exposition.  Une écoute prolongée à fort volume peut endommager vos oreilles. Lors de certains concerts de rock, ou de métal, la musique peut atteindre plus de 129 dB alors que la durée maximale d'exposition à ce son sans prendre de risque est de MOINS D’UNE SECONDE ! Surprenant, non ?</p> <!--insértion d'un paragraphe-->
+        </div> <!--fin de la divison "course-col"-->
+    </div> <!--fin de la divison "row"-->
+</section> <!--fin de la section course-->
+  <!-------------------photos---------------->
+<section class="campus"> <!--création d'une section attribué à la classe campus-->
+    <h1>Mais qu'est ce qu'on cherche à éviter?</h1> <!--insértion d'un titre-->
+    <p>Clique sur les images pour plus d'infos 😉</p> <!--insértion d'un paragraphe-->
+    <div class="row"> <!--création d'une division avec la classe "row"-->
+        <div class="campus-col"> <!--création d'une division avec la classe "campus-col"-->
+            <img src="images/oreille_1.png-removebg-preview.png"> <!--insértion d'une image-->
+            <div class="layer"> <!--création d'une division avec la classe "layer"-->
+                <h3>Acouphènes <br> <br>Un boudonnement ou sifflement entendu tous les jours sans interruption</h3> <!--insértion d'un sous sous titre-->
+            </div> <!--fin de la divison "layer"-->
+        </div> <!--fin de la divison "campus-col"-->
+        <div class="campus-col"> <!--création d'une division avec la classe "campus-col"-->
+            <img src="images/oreille 2.png"> <!--insértion d'une image avec l'identifiant "big_news"-->
+            <div class="layer"> <!--création d'une division avec la classe "layer"-->
+                <h3>Hyperacousie <br> <br> la personne qui en souffre devient in tolérante au moindre bruit</h3> <!--insértion d'un sous sous titre-->
+            </div> <!--fin de la divison "layer"-->
+        </div> <!--fin de la divison "campus-col"-->
+        <div class="campus-col"> <!--création d'une division avec la classe "campus-col"-->
+            <img src="images/oreille 3.png" id="oreille3"> <!--insértion d'une image-->
+            <div class="layer"> <!--création d'une division avec la classe "layer"-->
+                <h3>Surdité <br> <br> totalle ou partielle peut apparaitre prématurément ou définitivement</h3> <!--insértion d'un sous sous titre-->
+            </div> <!--fin de la divison "layer"-->
+        </div> <!--fin de la divison "campus-col"-->
+      </div> <!--fin de la divison "row"-->
+      <h2>Attention les ruptures de tympan et trumatismes sont irréverssibles donc mieux vaut ne pas les avoir 🤭</h2>  
+    </section> <!--fin de la section campus-->
+ 
+<!------------------------Pour éviter ----------------------->
+<section class="campus">
+    <h1 id="conseils">Voici quelque mesures pour rapidement éviter tous cela</h1>
+    <img src="images/tteviter 2.webp" id="tteviter">
+</section>
+
+<section class="campus">
+    <h1>Testez-vous</h1>
+    <p>Allez vous n'avez rien à perdre</p>
+    <div class="center-quiz">
+        <a href="quiz.html"><button>Commencer le quiz</button></a>
+    </div>
+    <div class="center-quiz">
+        <h2>Alors n’oubliez pas de vous demander souvent si vous respectez les
+            <span class="red">DVD</span>
+            : Suis-je à la bonne 
+            <span class="red">D</span>istance ? Le 
+            <span class="red">V</span>olume n’est-il pas trop élevé ? Ma 
+            <span class="red">D</span>urée d’exposition n’est-elle pas trop importante ?
+        </h2>
+    </div>
+</section>
+
+<!-- -------------Footer------------ -->
+<section class="footer"> <!--création d'une section attribué à la classe footer-->
+    <h4>A propos</h4> <!--insértion d'un sous sous sous titre-->
+    <div style="width: 100%;"> <!--création d'une division avec la taille défini à 100%-->
+        <div class="col-lg"> <!--création d'une division avec la classe col-lg-->
+            <p>Designer : Romain Dorloncourt</p> <!--insértion d'un paragraphe-->
+            <p>Codeur : Ismail Benarafa</p>  <!--insértion d'un paragraphe-->
+        </div> <!--fin de la divison "col-lg"-->
+        <div class="col-lg"> <!--création d'une division avec la classe col-lg-->
+            <p>Responsable-informatique : Ismail Benarafa</p> <!--insértion d'un paragraphe-->
+            <p>Auteur : Romain Dorloncourt</p> <!--insértion d'un paragraphe-->
+        </div> <!--fin de la divison "col-lg"-->
+        <div class="col-lg"> <!--création d'une division avec la classe col-lg-->
+            <p>Superviseur : Ismail Benarafa</p> <!--insértion d'un paragraphe-->
+            <p>Fondateur : Romain Dorloncourt</p> <!--insértion d'un paragraphe-->
+        </div> <!--fin de la divison "col-lg"-->
+        <div class="col-lg"> <!--création d'une division avec la classe col-lg-->
+            <p>Directeur artistique : Romain Dorloncourt</p> <!--insértion d'un paragraphe-->
+            <p>Developpeur : Ismail Benarafa</p>  <!--insértion d'un paragraphe-->
+        </div> <!--fin de la divison "col-lg"-->
+    </div>  <!--fin de la divison-->
+    <div class="icons"> <!--création d'une division avec la classe icons-->
+        <i class="fa fa-facebook"></i> <!--insértion d'une icone facebook-->
+        <i class="fa fa-twitter"></i> <!--insértion d'une icone twitter-->
+        <i class="fa fa-instagram"></i> <!--insértion d'une icone instagram-->
+        <i class="fa fa-linkedin"></i> <!--insértion d'une icone likedin-->
+    </div> <!--fin de la divison "icons"-->
+    <p>Fait Avec <i class="fa fa-heart-o"></i> Par Ismail Benarafa et Romain Dorloncourt</p> <!--insértion d'un paragraphe avec une icone de coeur-->
+</section> <!--fin de la section footer--> 
+<!----------------------Java Script for toggle menu------------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0%";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-20%";
+        }
+    </script>
+<!----------------------till here ------------------------------>
+</body> <!--fin du contenu de la page-->
+</html> <!--fin du code html-->
+
+
+
+
+
+

@@ -1,0 +1,380 @@
+*{ /*selection de tous les éléments*/
+    margin: 0; /*modification des bordures extérieures*/
+    padding: 0; /*modification des bordures intérieures*/
+    font-family: 'Mali', cursive; /*modification du style de police*/
+}
+a{
+    text-decoration: none;
+}
+.header{ /*séléction de la classe header*/
+    min-height: 100vh; /*hauteur minimale fixée*/
+    width: 100%; /*modification de la largeur de l'élément*/
+    background-image: linear-gradient(rgba(167, 226, 227, 0.4),rgba(167, 226, 227,0.4)), url(images/festivalbg.webp); /*arrière plan avec dégradé et image*/
+    background-position: center; /*positionnement de l'arrière plan*/
+    background-size: cover; /*ajustement de la taille de l'arrière plan*/
+    position: relative; /*positionnement relatif aux autres éléments*/
+}
+nav{ /*séléction de la div nav*/
+    display: flex; /*to allign text with image*/
+    padding: 2% 6%; /*modiication des bordues intérieurs*/
+    justify-content: space-between; /*pour mettre les liens de l'autre coté de la page avec un espace entre l'image (logo) et les liens*/
+    align-items: center; /*pour centre un peu le tout*/
+}
+nav img{ /*séléction de l'image de la div nav*/
+    width: 170px; /*modification de la largeur de l'élément*/
+}
+.text-box{ /*séléction de la classe text-box*/
+    width: 90%; /*modification de la largeur de l'élément*/
+    color: #052f5f; /*modifier la  couleur de texte*/
+    position: absolute; /*positionnement non-relatif aux autres éléments*/
+    top: 50%; /*exactement comme le padding*/
+    left: 50%; /*exactement comme le padding*/
+    transform: translate(-50%,-50%);/*cette ligne de code ainsi que les deux qui viennet avan servent à positonner le texte au milieu de la division*/
+    text-align: center; /*positionnement du texte*/
+}
+.text-box h1{ /*séléction du titre de la classe text-box*/
+    font-size: 62px; /*définir la taille du texte*/
+}
+.text-box p{ /*séléction du paragraphe de la classe text-box*/
+    background-color: #fba08967;
+    border-radius: 25px;
+    margin: 10px 0 40px; /*modification des bordures extérieures*/
+    margin-right: 20%;
+    margin-left: 20%;
+    font-size: 14px; /*définir la taille du texte*/
+    color: #052F5F; /*modifier la  couleur de texte*/
+    font-weight: 600; /*épaisseur du textet (gras)*/
+}
+.hero-btn{ /*séléction de la classe hero-btn*/
+    display: inline-block; /*positionnement dans la même ligne*/
+    text-decoration: none; /*rendre le texte normal*/
+    color: #052F5F; /*modifier la  couleur de texte*/
+    border: 3px solid #fb9f89; /*création d'une bordure solide avec une couleur*/
+    padding: 12px 34px; /*modiication des bordues intérieurs*/
+    font-size: 15px; /*définir la taille du texte*/
+    background: transparent; /*modification de la couleur de l'arrière plan*/
+    position: relative; /*positionnement relatif aux autres éléments*/
+    cursor: pointer; /*événement lorsque le curseur est dessus*/
+    border-radius: 5%; /*arrondissement de la bordure*/
+    z-index: 10; /*positionnnement entre arrière plan et premier plan*/
+    font-weight: 400; /*épaisseur du textet (gras)*/
+}
+.hero-btn:hover{ /*l'événement produit quand le curseur est pointé*/
+    border: 3px solid #fb9f89; /*création d'une bordure solide avec une couleur*/
+    background: #fb9f89; /*modification de la couleur de l'arrière plan*/
+    transition: 1s; /*le temps de transition*/
+}
+#teamworkbtn{ /*séléction de l'id teamworkbtn*/
+    color: #F4E285; /*modifier la  couleur de texte*/
+}
+nav .fa{ /*select the two icons*/
+    display: none;
+}
+@media(max-width: 700px){ /*tout le code ici présent est uniquement pour ajuster le site web lorsqu'on passe sur petit écran */
+    .text-box h1{ /*séléction du titre de la classe text-box*/
+        font-size: 20px; /*smaller the text*/
+    }
+    .nav-links ul li{ /*séléction de la puce dans la liste de la classe nav-links*/
+        display: block; /*réorganiser les liens*/
+    }
+    .nav-links{ /*séléction de la classe nav-links*/
+        position: fixed;  /*positionnement relatif aux autres éléments*/
+        background: #fb9f89; /*modification de la couleur de l'arrière plan*/
+        height: 100vh; /*modification de la hauteur de l'élément*/
+        width: 200px; /*modification de la largeur de l'élément*/
+        top: 0; /*exactement comme le padding*/
+        right: 0px; /*exactement comme le padding*/
+        text-align: left; /*positionnement du texte*/
+        z-index: 2; /*positionnnement entre arrière plan et premier plan*/ 
+        transition: 1s; /*le temps de transition*/
+    }
+    nav .fa{ /*selectionner les icones*/
+        display: block; /*positionnement de l'élément*/
+        color: #052f5f; /*modifier la  couleur de texte*/
+        margin: 10px; /*modification des bordures extérieures*/
+        font-size : 22px; /*définir la taille du texte*/
+        cursor: pointer; /*événement lorsque le curseur est dessus*/
+    }
+    .nav-links ul{ /*séléction de la liste de la classe nav-links*/
+        padding: 30px; /*modiication des bordues intérieurs*/
+    }
+}
+/* -----------a propos-------- */
+.course{ /*séléction de la classe course*/
+    width: 100%; /*modification de la largeur de l'élément*/
+    margin: auto; /*modification des bordures extérieures*/
+    text-align: center; /*positionnement du texte*/
+    padding-top: 100px; /*modiication des bordues intérieurs*/
+    background-image: linear-gradient(rgba(167, 226, 227, 0.288),rgba(167, 226, 227,0.4)); /*arrière plan avec dégradé*/
+    color: #052F5F; /*modifier la  couleur de texte*/
+}
+h1{ /*séléction des titres*/
+    font-size: 36px; /*définir la taille du texte*/
+    font-weight: 600;    /*épaisseur du textet (gras)*/
+}
+p{ /*séléction des paragraphes*/
+    color: #052F5F; /*modifier la  couleur de texte*/
+    font-size: 14px; /*définir la taille du texte*/
+    font-weight: 300; /*épaisseur du textet (gras)*/
+    line-height: 22px; /*modification de la hauteur de l'élément*/
+    padding: 10px; /*modiication des bordues intérieurs*/
+}
+.row{ /*séléction de la classe row*/
+    margin: 5% 5% 0% 5%; /*modification des bordures extérieures*/
+    display: flex;
+    justify-content: space-between; /*ajuster le texte*/
+}
+#Pourquoi{ /*séléction de l'id Pourquoi*/
+    background-color: #fb9f89; /*modification de la couleur de l'arrière plan*/
+}
+.course-col{ /*séléction de la classe course-col*/
+    flex-basis: 31%; /*distribuer équitablement les éléments sur le plan*/
+    background-color: #F4E285; /*modification de la couleur de l'arrière plan*/
+    border-radius: 10px; /*arrondissement de la bordure*/
+    margin-bottom: 5%; /*modification des bordures extérieures*/
+    padding: 20px 12px; /*modiication des bordues intérieurs*/
+    box-sizing: border-box;
+    transition: 0.5s; /*le temps de transition*/
+}
+h3{ /*séléction des sous sous titre*/
+    text-align: center; /*positionnement du texte*/
+    font-weight: 600; /*épaisseur du textet (gras)*/
+    margin: 0px 0; /*modification des bordures extérieures*/
+}
+.course-col:hover{ /*l'événement produit quand le curseur est pointé*/
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2); /*l'ombre d'un élément*/
+}
+@media(max-width: 700px){ /*adaptation au petit écran*/
+    .row{ /*séléction de la classe row*/
+        flex-direction: column;
+    }
+}
+/* --------------photos---------- */
+.campus{ /*séléction de la classe campus*/
+    width: 100%; /*modification de la largeur de l'élément*/
+    margin: auto; /*modification des bordures extérieures*/
+    text-align: center; /*positionnement du texte*/
+    padding-top: 50px; /*modiication des bordues intérieurs*/
+    background-image: linear-gradient(rgba(167, 226, 227, 0.288),rgba(167, 226, 227,0.4)); /*arrière plan avec dégradé*/
+    background-size: cover; /*ajustement de la taille de l'arrière plan*/
+    color: #052F5F; /*modifier la  couleur de texte*/
+
+}
+.campus-col{ /*séléction de la classe campus-col*/
+    flex-basis: 32%; /*distribuer équitablement les éléments sur le plan*/
+    border-radius: 10px; /*arrondissement de la bordure*/
+    margin-bottom: 30px; /*modification des bordures extérieures*/
+    position: relative; /*positionnement relatif aux autres éléments*/
+    overflow: hidden;
+}
+.campus-col img{ /*séléction de l'image de la classe campus-col*/
+    width: 100%; /*modification de la largeur de l'élément*/
+}
+.campus h2{
+    padding-bottom: 20px;
+}
+.layer{ /*séléction de la classe layer*/
+    background: transparent; /*modification de la couleur de l'arrière plan*/
+    height: 100%; /*modification de la hauteur de l'élément*/
+    width: 100%; /*modification de la largeur de l'élément*/
+    position: absolute; /*positionnement non-relatif aux autres éléments*/
+    top: 0; /*exactement comme le padding*/
+    left: 0; /*exactement comme le padding*/
+    transition: 0.5s ; /*le temps de transition*/
+}
+#big_news{ /*séléction de l'id big-news*/
+    width: 300px; /*modification de la largeur de l'élément*/
+}
+.red{
+    color: red;
+}
+.center-quiz{
+    padding-bottom: 1%;
+}
+.layer:hover{ /*l'événement produit quand le curseur est pointé*/
+    background-color: rgba(251, 159, 137, 0.7); /*modification de la couleur de l'arrière plan*/
+}
+.layer h3{ /*séléction du sous sous titre de la classe layer*/
+    width: 100%; /*modification de la largeur de l'élément*/
+    font-weight: 500; /*épaisseur du textet (gras)*/
+    color: #052F5F; /*modifier la  couleur de texte*/
+    font-size: 26px; /*définir la taille du texte*/
+    bottom: 0; /*exactement comme le padding*/
+    left: 50%; /*exactement comme le padding*/
+    transform: translateX(-50%);
+    position: absolute; /*positionnement non-relatif aux autres éléments*/
+    opacity: 0; /*modifier la transparence*/
+    transition: 0.5s; /*le temps de transition*/
+}
+.layer:hover h3{ /*l'événement produit quand le curseur est pointé*/
+    bottom: 49%; /*modification des bordures intérieures*/
+    opacity: 1; /*modifier la transparence*/
+}
+#tteviter{
+    padding: 20px;
+    width: 80%;
+    border-radius: 50px;
+}
+/* ---------------Testimonials--------- */
+.testimonials{ /*séléction de la classe textimonials*/
+    width: 100%; /*modification de la largeur de l'élément*/
+    margin: auto; /*modification des bordures extérieures*/
+    padding-top: 100px; /*modiication des bordues intérieurs*/
+    text-align: center; /*positionnement du texte*/
+    background: linear-gradient(rgba(167, 226, 227, 0.288),rgba(167, 226, 227,0.4)); /*arrière plan avec dégradé*/
+    color: #052F5F; /*modifier la  couleur de texte*/
+}
+.testimonials-col{ /*séléction de la classe testimonials-col*/
+    flex-basis: 47%; /*distribuer équitablement les éléments sur le plan*/
+    border-radius: 10px; /*arrondissement de la bordure*/
+    margin-bottom: 5%; /*modification des bordures extérieures*/
+    text-align: left; /*positionnement du texte*/
+    background-color: #fba08991; /*modification de la couleur de l'arrière plan*/
+    padding: 25px; /*modification des bordures intérieures*/
+    cursor: pointer; /*événement lorsque le curseur est dessus*/
+    display: flex;
+}
+.testimonials-col img{ /*séléction de l'image de la classe testilonials-col*/
+    height: 40px; /*modification de la hauteur de l'élément*/
+    margin-left: 5px; /*modification des bordures extérieures*/
+    margin-right: 30px; /*modification des bordures extérieures*/
+    border-radius: 50%; /*arrondissement de la bordure*/
+}
+.testimonials-col p{ /*séléction du paragraphe de la classe testilonials-col*/
+    padding: 0; /*modification des bordures intérieures*/
+}
+.testimonials-col h3{ /*séléction du sous sous titre de la classe testilonials-col*/
+    margin-top: 15px; /*modification des bordures extérieures*/
+    text-align: left; /*positionnement du texte*/
+}
+.testimonials-col .fa{ /*séléction de la classe testimonials-col et fa*/
+    color: #F44336; /*modifier la  couleur de texte*/
+}
+@media(max-width: 700px){ /*adaptation au petit écran*/
+    .testimonials-col img{ /*séléction de l'image de la classe testimonials-col*/
+        margin-left: 0px; /*modification des bordures extérieures*/
+        margin-right: 15px; /*modification des bordures extérieures*/
+    }
+    #conseils{
+        font-size: 20px;
+    }
+    .campus h2{
+        font-size: 18px;
+    }
+}
+/* ---------------Footer----------- */
+.footer{ /*séléction de la classe footer*/
+    width: 100%; /*modification de la largeur de l'élément*/
+    text-align: center; /*positionnement du texte*/
+    padding: 30px 0; /*modiication des bordues intérieurs*/
+    color: #052f5f; /*modifier la  couleur de texte*/
+}
+.footer h4{ /*séléction d'un sous sous sous titre de la classe footer*/
+    margin-bottom: 25px; /*modification des bordures extérieures*/
+    margin-top: 20px; /*modification des bordures extérieures*/
+    font-weight: 600; /*épaisseur du textet (gras)*/
+}
+.icons .fa{ /* séléction de la classe incons et fa*/
+    color: #FF0F0F; /*modifier la  couleur de texte*/
+    margin: 0 13px; /*modification des bordures extérieures*/
+    cursor: pointer; /*événement lorsque le curseur est dessus*/
+    padding: 18px 0; /*modiication des bordues intérieurs*/
+}
+.fa-heart-o{ /*séléction de la classe fa-heart-o*/
+    color: #FF0F0F; /*modifier la  couleur de texte*/
+}
+.col-lg{ /*séléction de la classe col-lg*/
+    position: relative; /*positionnement relatif aux autres éléments*/
+    min-height: 1px; /*modification de la hauteur de l'élément*/
+    width: 25%; /*modification de la largeur de l'élément*/
+    float: left; /*faire en sorte que l'élément devient indépendant*/
+}
+/* ---------------- Quiz ------------------ */
+.campus button{
+    background: #001e4d;
+    color: white;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+}
+.page-quiz{ /*sélection de la classe page-quiz*/
+    background: #001e4d;
+}
+.app{ /*sélection de la classe app*/
+    background: white;
+    width: 90%;
+    max-width: 610px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+}
+.app h1{ /*sélection des titres de cette classe*/
+    font-size: 25px;
+    color: #001e4d;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+}
+.quiz{ /*sélection de la classe quiz*/
+    padding: 20px 0;
+}
+.quiz h2{ /*sélection des sous tirres de cette classe */
+    font-size: 18px;
+    color: #001e4d;
+    font-weight: 600;
+}
+.btn{ /*sélection de la classe btn*/
+    background: white;
+    color: #001e4d;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    margin: 10px 0;
+    padding: 10px;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn:hover:not([disabled]){ /*ce qui se passe lorsqu'on met notre souris sur un bouton desactivé*/
+    background: black;
+    color: white;
+    transition: 0.3s;  /*temps de transition pour l'animation*/
+}
+.btn:disabled{ /*sélection d'un bouton desactivé*/
+    cursor: no-drop;
+}
+#next-btn{ /*sélection de l'élement d'id next-btn*/
+    background: #001e4d;
+    color: white;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+#return-btn{ /*sélection de l'élement d'id return-btn*/
+    background: #001e4d;
+    color: white;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+.correct{ /*sélection de la classe correct*/
+    background: #9aeabc;
+}
+.incorrect{ /*sélection de la classe incorrect*/
+    background: #ff9393;
+}
